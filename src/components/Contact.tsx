@@ -11,8 +11,16 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Create mailto link with form data
+    const subject = `Portfolio Contact from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:peramvenkatesh97@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
     console.log('Form submitted:', formData);
-    // Handle form submission here
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -48,7 +56,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-400">venkatesh.peram@example.com</p>
+                  <p className="text-gray-400">peramvenkatesh97@gmail.com</p>
                 </div>
               </div>
               

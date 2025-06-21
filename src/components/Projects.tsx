@@ -5,35 +5,19 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      github: '#',
-      live: '#',
+      title: 'Flight Booking System',
+      description: 'A comprehensive flight booking application built with modern web technologies. Features include flight search, booking management, user authentication, and a clean, intuitive interface for seamless travel planning.',
+      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
+      github: 'https://github.com/PERAMVENKATESH45/Flight-booking-system.git',
+      live: 'https://flightbookvenky.netlify.app/',
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71',
-      tags: ['React', 'Socket.io', 'MongoDB', 'Express'],
-      github: '#',
-      live: '#',
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed analytics using multiple weather APIs.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b',
-      tags: ['Vue.js', 'TypeScript', 'Weather API', 'Charts.js'],
-      github: '#',
-      live: '#',
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'A comprehensive analytics dashboard for social media platforms with data visualization, reporting, and automated insights.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-      tags: ['React', 'D3.js', 'Python', 'FastAPI'],
-      github: '#',
+      title: 'Password Reset Flow',
+      description: 'A secure password reset system implementation with email verification, token-based authentication, and user-friendly interface. Demonstrates best practices for user authentication and security.',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c',
+      tags: ['Node.js', 'Express', 'JWT', 'Email API'],
+      github: 'https://github.com/PERAMVENKATESH45/Password_Reset.git',
       live: '#',
     },
   ];
@@ -87,18 +71,24 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <a 
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
                   >
                     <Github className="w-4 h-4" />
                     <span>Code</span>
                   </a>
-                  <a 
-                    href={project.live}
-                    className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.live !== '#' && (
+                    <a 
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

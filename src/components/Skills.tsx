@@ -3,14 +3,14 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [
-    { name: 'React', level: 95, color: 'from-blue-500 to-cyan-500' },
-    { name: 'TypeScript', level: 90, color: 'from-blue-600 to-blue-800' },
+    { name: 'HTML', level: 95, color: 'from-orange-500 to-red-500' },
+    { name: 'CSS', level: 90, color: 'from-blue-500 to-blue-700' },
+    { name: 'Tailwind CSS', level: 85, color: 'from-cyan-400 to-blue-500' },
+    { name: 'React.js', level: 90, color: 'from-blue-400 to-cyan-500' },
+    { name: 'JavaScript', level: 88, color: 'from-yellow-400 to-orange-500' },
     { name: 'Node.js', level: 85, color: 'from-green-500 to-green-700' },
-    { name: 'Python', level: 80, color: 'from-yellow-500 to-orange-500' },
-    { name: 'PostgreSQL', level: 75, color: 'from-blue-700 to-indigo-700' },
-    { name: 'AWS', level: 70, color: 'from-orange-500 to-red-500' },
-    { name: 'Docker', level: 85, color: 'from-blue-400 to-blue-600' },
-    { name: 'GraphQL', level: 75, color: 'from-pink-500 to-purple-500' },
+    { name: 'Express.js', level: 80, color: 'from-gray-600 to-gray-800' },
+    { name: 'MongoDB', level: 75, color: 'from-green-600 to-green-800' },
   ];
 
   return (
@@ -48,17 +48,17 @@ const Skills = () => {
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
             <h4 className="text-white font-semibold mb-2">Frontend</h4>
-            <p className="text-gray-400 text-sm">React, Vue.js, TypeScript, Tailwind CSS, Next.js</p>
+            <p className="text-gray-400 text-sm">HTML, CSS, Tailwind CSS, React.js, JavaScript</p>
           </div>
           
           <div className="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
             <h4 className="text-white font-semibold mb-2">Backend</h4>
-            <p className="text-gray-400 text-sm">Node.js, Python, PostgreSQL, MongoDB, Redis</p>
+            <p className="text-gray-400 text-sm">Node.js, Express.js, MongoDB</p>
           </div>
           
           <div className="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
-            <h4 className="text-white font-semibold mb-2">Tools & Platforms</h4>
-            <p className="text-gray-400 text-sm">AWS, Docker, Git, Figma, Vercel</p>
+            <h4 className="text-white font-semibold mb-2">Tools</h4>
+            <p className="text-gray-400 text-sm">VS Code, GitHub, Postman</p>
           </div>
         </div>
       </div>

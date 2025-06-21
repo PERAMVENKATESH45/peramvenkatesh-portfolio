@@ -1,11 +1,21 @@
 
 import React from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const downloadResume = () => {
+    // Create a temporary link to download resume
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // You'll need to add your resume PDF to the public folder
+    link.download = 'Peram_Venkatesh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -39,7 +49,7 @@ const Hero = () => {
           <a href="https://linkedin.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
             <Linkedin className="w-6 h-6 text-white" />
           </a>
-          <a href="mailto:venkatesh@example.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+          <a href="mailto:peramvenkatesh97@gmail.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
             <Mail className="w-6 h-6 text-white" />
           </a>
         </div>
@@ -51,6 +61,13 @@ const Hero = () => {
             className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
           >
             View My Work
+          </button>
+          <button 
+            onClick={downloadResume}
+            className="px-8 py-4 border border-white/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+          >
+            <Download className="w-4 h-4" />
+            <span>Download Resume</span>
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
