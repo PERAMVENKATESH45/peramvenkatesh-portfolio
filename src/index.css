@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -99,5 +100,33 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+  .delay-700 {
+    animation-delay: 0.7s;
+  }
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes skill-fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--skill-width);
   }
 }
