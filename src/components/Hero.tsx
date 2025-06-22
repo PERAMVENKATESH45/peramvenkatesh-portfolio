@@ -9,13 +9,8 @@ const Hero = () => {
   };
 
   const downloadResume = () => {
-    // Create a temporary link to download resume
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You'll need to add your resume PDF to the public folder
-    link.download = 'Peram_Venkatesh_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open Google Drive resume link in new tab
+    window.open('https://drive.google.com/file/d/1CPwqUi6nvgBgD5cj-AbDtfevJy791d4l/view?usp=sharing', '_blank');
   };
 
   return (
@@ -33,7 +28,7 @@ const Hero = () => {
             Peram Venkatesh
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in delay-300">
-            Full Stack Developer & UI/UX Designer
+            Full Stack Developer
           </p>
           <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in delay-500">
             Passionate about creating beautiful, functional, and user-centered digital experiences. 

@@ -11,8 +11,8 @@ const About = () => {
             About Me
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with expertise in modern web technologies. 
-            I love turning complex problems into simple, beautiful designs.
+            I'm a passionate full-stack developer with expertise in MERN stack technologies. 
+            I love turning complex problems into simple, beautiful solutions.
           </p>
         </div>
         
@@ -22,15 +22,14 @@ const About = () => {
               My Journey
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              With over 3 years of experience in web development, I've worked with startups and 
-              established companies to create digital solutions that make a difference. My expertise 
-              spans from front-end technologies like React and Vue.js to back-end development with 
-              Node.js and Python.
+              As a fresher in the field of web development, I joined Guvi to master the MERN stack 
+              technologies. During my learning journey, I gained hands-on experience with MongoDB, 
+              Express.js, React.js, and Node.js, building several projects that showcase my skills.
             </p>
             <p className="text-gray-300 leading-relaxed">
               I believe in writing clean, maintainable code and creating user experiences that are 
-              both beautiful and functional. When I'm not coding, you can find me exploring new 
-              technologies or contributing to open-source projects.
+              both beautiful and functional. I'm eager to apply my knowledge in real-world projects 
+              and continue growing as a developer while contributing to meaningful solutions.
             </p>
           </div>
           
@@ -39,23 +38,23 @@ const About = () => {
               <Code className="w-8 h-8 text-blue-400 mb-3" />
               <h4 className="text-white font-semibold mb-2">Clean Code</h4>
               <p className="text-gray-400 text-sm">
-                Writing maintainable, scalable, and efficient code that stands the test of time.
+                Writing maintainable, scalable, and efficient code following best practices.
               </p>
             </div>
             
             <div className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
               <Palette className="w-8 h-8 text-purple-400 mb-3" />
-              <h4 className="text-white font-semibold mb-2">Design Focus</h4>
+              <h4 className="text-white font-semibold mb-2">Problem Solving</h4>
               <p className="text-gray-400 text-sm">
-                Creating intuitive user interfaces that provide exceptional user experiences.
+                Breaking down complex problems into simple, elegant solutions.
               </p>
             </div>
             
             <div className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
               <Zap className="w-8 h-8 text-yellow-400 mb-3" />
-              <h4 className="text-white font-semibold mb-2">Performance</h4>
+              <h4 className="text-white font-semibold mb-2">Learning</h4>
               <p className="text-gray-400 text-sm">
-                Optimizing applications for speed, accessibility, and search engine visibility.
+                Continuously learning new technologies and improving development skills.
               </p>
             </div>
           </div>
