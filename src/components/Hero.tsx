@@ -38,10 +38,10 @@ const Hero = () => {
         
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-12 animate-fade-in delay-700">
-          <a href="https://github.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+          <a href="https://github.com/PERAMVENKATESH45" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
             <Github className="w-6 h-6 text-white" />
           </a>
-          <a href="https://linkedin.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+          <a href="https://www.linkedin.com/in/venkatesh-peram-341ab1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
             <Linkedin className="w-6 h-6 text-white" />
           </a>
           <a href="mailto:peramvenkatesh97@gmail.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
