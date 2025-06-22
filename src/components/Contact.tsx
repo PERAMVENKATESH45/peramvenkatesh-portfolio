@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
@@ -66,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Phone</p>
-                  <p className="text-gray-400">+91 98765 43210</p>
+                  <p className="text-gray-400">7995781428</p>
                 </div>
               </div>
               
@@ -76,7 +75,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Location</p>
-                  <p className="text-gray-400">Hyderabad, India</p>
+                  <p className="text-gray-400">Tirupati, India</p>
                 </div>
               </div>
             </div>
@@ -154,7 +153,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-white/10">
           <p className="text-gray-400">
-            © 2024 Peram Venkatesh. Built with React and Tailwind CSS.
+            © 2025 Peram Venkatesh. Built with React and Tailwind CSS.
           </p>
         </div>
       </div>

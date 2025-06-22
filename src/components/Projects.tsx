@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -18,7 +17,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c',
       tags: ['Node.js', 'Express', 'JWT', 'Email API'],
       github: 'https://github.com/PERAMVENKATESH45/Password_Reset.git',
-      live: '#',
+      live: 'https://subtle-taiyaki-b26f04.netlify.app/',
     },
   ];
 
