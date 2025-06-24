@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -8,7 +9,8 @@ const Projects = () => {
       description: 'A comprehensive flight booking application built with modern web technologies. Features include flight search, booking management, user authentication, and a clean, intuitive interface for seamless travel planning.',
       image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05',
       tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      github: 'https://github.com/PERAMVENKATESH45/Flight-booking-system.git',
+      frontend: 'https://github.com/PERAMVENKATESH45/Flight-booking-system',
+      backend: 'https://github.com/PERAMVENKATESH45/Flight-booking-system',
       live: 'https://flightbookvenky.netlify.app/',
     },
     {
@@ -16,7 +18,8 @@ const Projects = () => {
       description: 'A secure password reset system implementation with email verification, token-based authentication, and user-friendly interface. Demonstrates best practices for user authentication and security.',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c',
       tags: ['Node.js', 'Express', 'JWT', 'Email API'],
-      github: 'https://github.com/PERAMVENKATESH45/Password_Reset.git',
+      frontend: 'https://github.com/PERAMVENKATESH45/Password_Reset',
+      backend: 'https://github.com/PERAMVENKATESH45/Password_Reset',
       live: 'https://subtle-taiyaki-b26f04.netlify.app/',
     },
   ];
@@ -69,13 +72,22 @@ const Projects = () => {
                 
                 <div className="flex space-x-4">
                   <a 
-                    href={project.github}
+                    href={project.frontend}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
                   >
                     <Github className="w-4 h-4" />
-                    <span>Code</span>
+                    <span>Frontend</span>
+                  </a>
+                  <a 
+                    href={project.backend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                  >
+                    <Github className="w-4 h-4" />
+                    <span>Backend</span>
                   </a>
                   {project.live !== '#' && (
                     <a 
